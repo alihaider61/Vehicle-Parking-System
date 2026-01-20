@@ -1,15 +1,20 @@
 {
     "configurations": [
         {
-            "name": "Win32",
+            "name": "SmartParking-GCC",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:/Path/To/Your/SFML-2.6.1/include"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
-            ]
+            ],
+            "compilerPath": "C:/Path/To/Your/SFML-2.6.1/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64"
         }
     ],
     "version": 4
