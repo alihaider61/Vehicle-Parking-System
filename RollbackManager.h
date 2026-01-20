@@ -3,9 +3,9 @@
 
 #include "ParkingSlot.h"
 
-// Abdullah: Custom Node for the Rollback Stack
+// Abdullah: Node for custom stack
 struct RollbackNode {
-    ParkingSlot* slotPtr;
+    ParkingSlot* slot;
     RollbackNode* next;
 };
 
@@ -15,8 +15,8 @@ private:
 
 public:
     RollbackManager();
-    void recordAction(ParkingSlot* slot);
-    void undoLast(int k);
+    void push(ParkingSlot* slot);
+    void pop(int k);
 };
 
 #endif
