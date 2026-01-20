@@ -1,10 +1,13 @@
 #ifndef ALLOCATIONENGINE_H
 #define ALLOCATIONENGINE_H
-#include "Zone.h"
+
+// Forward declaration: Tells the compiler Zone exists without loading the whole file yet
+class Zone; 
+class ParkingSlot; 
 
 class AllocationEngine {
 public:
-    // Returns a pointer to a free slot, handles redirection
+    // Ali: Returns a pointer to a free slot, handles redirection
     ParkingSlot* allocate(Zone* zones, int zoneCount, int preferredZoneID);
 };
 
